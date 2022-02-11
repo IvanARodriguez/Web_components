@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+    background-color: rgba(29, 2, 51, 0.234);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.main.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+}
+
+.main_title{
+    padding: 3rem;
+    font-weight: 700;
+    font-size: 3vh;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(98, 79, 116);
+}
+.grid{
+    display: grid;
+    align-content: centersss;
+    justify-content: start;
+    overflow-x: scroll;
+    width: 100vw;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+    padding: 2rem 2rem;
+}
+.card_container{
+    overflow: hidden;
+    width: 100%;
+    min-width: 210px;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: .4rem;
+    box-shadow: 0rem .4rem 1rem rgba(29, 2, 51, 0.152);
+}
+
+.img_box{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-height: 13rem;
+}
+.img_box img{
+    width: 120%;
+}
+.card_detail{
+    padding: .8rem .7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.4rem;
+    flex-wrap: wrap;
+}
+.right_icon{
+    margin-left: 5px;
+}
+
+.card_detail p{
+ color: rgb(100, 100, 100);
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.3rem;
+}
+.btn_cta{
+    background-color: blueviolet;
+    text-align: center;
+    border-radius: .3rem;
+    color: #fff;
+    padding: 2% 8%;
+    transition: background-color .7s ease-in-out;
+    width: 50%;
+    margin: 2rem 0;
+}
+
+.btn_cta:hover{
+    background-color: rgb(99, 31, 163);
+
+}
